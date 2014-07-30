@@ -15,7 +15,7 @@ error(const string& s)
     cerr << endl << s << endl;
     cout << endl << s << endl;
     cout.flush();
-    abort();
+    throw 0;
     }
 
 void 
@@ -29,6 +29,6 @@ error(const string& s, int line, const char* file = 0)
     cout << endl << s << endl;
     cout.flush();
     cerr.flush();
-    abort();
+    throw 0;
     }
 
